@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WebApplication1.Controllers.Colleagues>
+
+@{
+    ViewBag.Title = "Names";
+}
+
+<h2>Names of Colleagues</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+
